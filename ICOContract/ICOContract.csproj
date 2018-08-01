@@ -8,8 +8,8 @@
     <ProjectGuid>{BD28E837-836F-46D0-8D8B-08FAF1BF394E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ICO_Template</RootNamespace>
-    <AssemblyName>ICO_Template</AssemblyName>
+    <RootNamespace>ICOContract</RootNamespace>
+    <AssemblyName>ICOContract</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
