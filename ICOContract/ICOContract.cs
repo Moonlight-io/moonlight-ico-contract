@@ -16,25 +16,23 @@ namespace Neo.SmartContract
         /// <summary>
         /// this is the initial admin account responsible for initialising the contract (reversed byte array of contract address)
         /// </summary>
-        //public static readonly byte[] InitialAdminAccount = { 187, 253, 4, 207, 138, 221, 236, 148, 199, 120, 122, 82, 106, 111, 132, 32, 83, 22, 121, 162 };  // mlpriv
-        public static readonly byte[] InitialAdminAccount = { 230, 232, 140, 74, 123, 18, 79, 162, 107, 202, 137, 132, 9, 79, 65, 209, 113, 134, 111, 230 }; // testnet
-        //
+        public static readonly byte[] InitialAdminAccount = { 100, 160, 44, 55, 242, 105, 87, 175, 125, 97, 75, 228, 143, 76, 167, 75, 245, 65, 162, 123 }; // mainnet
 
         /// <summary>
         /// project token allocation will be assigned here and subject to vesting criteria defined in the whitepaper (see below for details)
         /// </summary>
-        public static byte[] MoonlightProjectKey() => new byte[] { 117, 193, 54, 170, 8, 227, 61, 189, 23, 2, 129, 242, 221, 54, 158, 202, 150, 10, 226, 29 };
+        public static byte[] MoonlightProjectKey() => new byte[] { 124, 126, 46, 158, 164, 73, 102, 110, 177, 73, 54, 125, 123, 109, 137, 234, 83, 108, 79, 40 };
 
         /// <summary>
         /// founder tokens will be assigned to the following addresses and are subject to different token vesting rules (see below for details)
         /// </summary>
         public static object[] MoonlightFounderKeys() => new object[]
         {
-            new byte[] { 55, 250, 125, 221, 52, 232, 7, 221, 193, 108, 232, 36, 200, 209, 139, 35, 6, 111, 42, 242 },       // cb
-            new byte[] { 205, 158, 64, 30, 243, 102, 24, 159, 111, 117, 200, 21, 229, 221, 26, 159, 68, 122, 35, 57 },      // af
-            new byte[] { 195, 234, 177, 123, 97, 137, 86, 132, 221, 159, 211, 23, 1, 90, 223, 60, 194, 179, 193, 163 },     // tl
-            new byte[] { 91, 39, 9, 191, 150, 163, 187, 245, 181, 178, 45, 98, 240, 24, 216, 66, 166, 25, 202, 228 },       // bh
-            new byte[] { 146, 69, 220, 159, 188, 52, 21, 35, 2, 31, 31, 237, 56, 230, 222, 144, 15, 27, 206, 71 }           // ta
+            new byte[] { 38, 175, 183, 16, 212, 234, 6, 252, 230, 92, 157, 12, 184, 93, 124, 44, 8, 221, 82, 193 },       // cb
+            new byte[] { 244, 51, 199, 56, 98, 157, 96, 57, 255, 199, 40, 196, 136, 144, 130, 170, 217, 10, 29, 185 },    // af
+            new byte[] { 209, 39, 136, 227, 109, 218, 149, 255, 134, 96, 112, 72, 132, 37, 241, 181, 68, 132, 86, 98 },   // tl
+            new byte[] { 172, 110, 59, 7, 174, 250, 219, 82, 105, 9, 25, 101, 160, 184, 142, 217, 159, 122, 3, 97 },      // bh
+            new byte[] { 157, 209, 237, 196, 69, 138, 213, 164, 33, 53, 174, 11, 150, 81, 186, 67, 85, 132, 27, 221 }     // ta
         };
 
         /// <summary>
