@@ -233,6 +233,24 @@ namespace Neo.SmartContract
         }
 
         /// <summary>
+        /// determine if address is one of the founder keys or the ML project key. if so they are still subject to vesting rules
+        /// </summary>
+        /// <param name="address"></param>
+        /// <returns>bool</returns>
+        public static bool IsProjectKey(byte[] address)
+        {
+            object[] keys = ICOContract.MoonlightFounderKeys();
+
+            if(address == (byte[])keys[0] || address == (byte[])keys[1] || address == (byte[])keys[2] 
+                || address == (byte[])keys[3] || address == (byte[])keys[4] || address == ICOContract.MoonlightProjectKey())
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
         /// test that args contains the number of required args
         /// </summary>
         /// <param name="args">arguments provided to contract</param>
