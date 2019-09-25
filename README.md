@@ -29,7 +29,7 @@ The Moonlight team is proud to provide a new ICO template for use by the NEO com
 * Vested project token allocation
 
 ## Deployed
-A deployed example of this contract can be found on Neo Testnet at `eac77fffef895a3bc90ca97437f30f9794e007da`
+This contract can be found on Neo Mainnet at `9c1f315264200988a0d2fbb5489f2c9adb9c765f`
 
 
 
