@@ -1,0 +1,26 @@
+{
+  "name": "moonlight-ico-contract",
+  "version": "0.0.1",
+  "dependencies": {
+    "@cityofzion/neon-js": "latest",
+    "@moonlight-io/asteroid-sdk-js": "git+https://github.com/Moonlight-io/asteroid-sdk-js.git#develop",
+    "@types/chai": "^4.2.2",
+    "@types/mocha": "^5.2.7",
+    "assert": "^2.0.0",
+    "axios": "^0.18.0",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.1",
+    "dotenv": "^8.1.0",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
+    "mocha": "^6.2.0"
+  },
+  "scripts": {
+    "test-original": "mocha test/original/ --recursive",
+    "test-migrate": "mocha test/migrate/ --recursive",
+    "test-post-migrate": "mocha test/post-migrate/ --recursive",
+    "test-private-original": "cross-env DEFAULT_NETWORK=PrivateNet mocha test/original/ --recursive ",
+    "test-private-migrate": "cross-env DEFAULT_NETWORK=PrivateNet mocha test/migrate/ --recursive ",
+    "test-private-post-migrate": "cross-env DEFAULT_NETWORK=PrivateNet mocha test/post-migrate/ --recursive "
+  }
+}

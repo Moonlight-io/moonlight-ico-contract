@@ -1,0 +1,6 @@
+ICOContract/obj
+packages
+node_modules
+package-lock.json
+.vs
+.DS_Store
